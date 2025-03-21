@@ -1,4 +1,5 @@
-
+import { Button } from "../components/atoms/Button";
+import { Input } from "../components/atoms/Input";
 
 export const Login = () => {
   return (
@@ -11,31 +12,11 @@ export const Login = () => {
 
         <form>
           <div className="mb-6">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-              Email Address
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            />
+            <Input type="email" label="Email Address" placeholder="Enter your email" />
           </div>
 
           <div className="mb-6">
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Enter your password"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            />
+            <Input type="password" label="Password" placeholder="Enter your password" />
           </div>
 
           <div className="flex items-center justify-between mb-6">
@@ -52,26 +33,22 @@ export const Login = () => {
             </div>
 
             <a
-              href="#"
+              href="/forgot-password"
               className="text-sm text-blue-600 hover:text-blue-500"
             >
               Forgot Password?
             </a>
           </div>
-
-          <button
-            type="submit"
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-          >
+        <Button type="submit" variant="primary" className="w-full mt-4">
             Sign In
-          </button>
+          </Button>
         </form>
 
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">
             Don't have an account?{' '}
             <a
-              href="#"
+              href="/signup"
               className="text-blue-600 hover:text-blue-500 font-medium"
             >
               Sign Up
