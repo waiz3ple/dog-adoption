@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import { Button } from "../components/atoms/Button";
 import { Input } from "../components/atoms/Input";
-
 export const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -32,12 +32,9 @@ export const Login = () => {
               </label>
             </div>
 
-            <a
-              href="/forgot-password"
-              className="text-sm text-blue-600 hover:text-blue-500"
-            >
+            <Link to="/forgot-password" className="text-sm text-blue-600 hover:text-blue-500">
               Forgot Password?
-            </a>
+            </Link>
           </div>
         <Button type="submit" variant="primary" className="w-full mt-4">
             Sign In
@@ -47,12 +44,9 @@ export const Login = () => {
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">
             Don't have an account?{' '}
-            <a
-              href="/signup"
-              className="text-blue-600 hover:text-blue-500 font-medium"
-            >
-              Sign Up
-            </a>
+            <Link to="/signup" className="text-blue-600 hover:text-blue-500 font-medium">
+                Sign Up
+            </Link>
           </p>
         </div>
       </div>

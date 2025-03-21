@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../components/atoms/Button";
 import { Input } from "../components/atoms/Input";
 export const ForgotPassword = () => {
@@ -17,16 +18,12 @@ export const ForgotPassword = () => {
             Send Reset Link   
         </Button>
         </form>
-
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">
-            Remember your password?{' '}
-            <a
-              href="/login"
-              className="text-blue-600 hover:text-blue-500 font-medium"
-            >
-              Sign In
-            </a>
+            Remember your password?{' '} 
+            <Link to="/" className="text-blue-600 hover:text-blue-500 font-medium">
+                Sign In
+            </Link>
           </p>
         </div>
       </div>
