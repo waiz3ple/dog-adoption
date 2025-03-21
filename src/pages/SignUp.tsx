@@ -37,7 +37,6 @@ export const SignUp = () => {
                 value={''}
             />  
                   
-
           <Button type="submit" variant="primary" className="w-full">
             Sign Up
           </Button>
