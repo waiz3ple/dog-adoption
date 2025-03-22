@@ -1,7 +1,16 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "../components/atoms/Button";
+import { Checkbox } from '../components/atoms/CheckBox';
 import { Input } from "../components/atoms/Input";
+
 export const Login = () => {
+    const [isChecked, setIsChecked] = useState(false);
+
+    const onChange = (checked: boolean) => {
+        setIsChecked(checked);
+    };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
@@ -20,18 +29,9 @@ export const Login = () => {
           </div>
 
           <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center">
-              <input
-                type="checkbox"
-                id="remember-me"
-                name="remember-me"
-                className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-              />
-              <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
-                Remember Me
-              </label>
+            <div className="flex items-center">   
+                <Checkbox id="remember-me" label="Remember Me" checked={isChecked} onChange={onChange}/>
             </div>
-
             <Link to="/forgot-password" className="text-sm text-blue-600 hover:text-blue-500">
               Forgot Password?
             </Link>
