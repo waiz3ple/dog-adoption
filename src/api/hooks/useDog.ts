@@ -1,6 +1,5 @@
 import { keepPreviousData, useMutation, useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
-import { authService } from '../services/authService';
 import { dogService } from '../services/dogServices';
 import type { Dog, MatchResponse, SearchParams, SearchResponse } from '../types/dogTypes';
 
@@ -38,7 +37,3 @@ export const useMatch = () =>
   });
 
 
-export const useLogin = () =>
-    useMutation({
-    mutationFn: async () => authService.login,
-  })
