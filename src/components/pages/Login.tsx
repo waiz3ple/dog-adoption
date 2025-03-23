@@ -1,15 +1,36 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useLogin } from '../../api/hooks/useLogin';
 import { Button } from "../atoms/Button";
 import { Checkbox } from '../atoms/CheckBox';
 import { Input } from "../atoms/Input";
 
 export const Login = () => {
-    const [isChecked, setIsChecked] = useState(false);
+  const [credentials, setCredentials] = useState<{ name: string; email: string }>({
+    name: '',
+    email: '',
+  });
+    const [isChecked, setIsChecked] = useState(false); 
 
     const onChange = (checked: boolean) => {
         setIsChecked(checked);
     };
+
+    const navigate = useNavigate();
+    const loginMutation = useLogin(); 
+    
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCredentials({ ...credentials, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log({ credentials, loginMutation }); 
+    loginMutation.mutate(credentials, {
+      onSuccess: () => navigate('/search'),
+      onError: (error: Error) => alert(`Login failed: ${error.message}`),
+    });
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -19,15 +40,13 @@ export const Login = () => {
           Sign in to your account to continue.
         </p>
 
-        <form>
+        <form  onSubmit={handleSubmit}>
           <div className="mb-6">
-            <Input type="email" label="Email Address" placeholder="Enter your email" />
+                <Input type="text" label="Name" placeholder="Enter your name" name='name' onChange={ handleInputChange } value={ credentials.name} />
+            </div>
+            <div className="mb-6">
+                <Input type="email" label="Email Address" placeholder="Enter your email" name='email' onChange={ handleInputChange } value={ credentials.email}/>
           </div>
-
-          <div className="mb-6">
-            <Input type="password" label="Password" placeholder="Enter your password" />
-          </div>
-
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center">   
                 <Checkbox id="remember-me" label="Remember Me" checked={isChecked} onChange={onChange}/>
