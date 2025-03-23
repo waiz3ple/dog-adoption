@@ -9,6 +9,7 @@ interface InputProps {
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
     error?: string;
     disabled?: boolean;
+    name?: string;
     className?: string;
 }
 
@@ -18,6 +19,7 @@ export const Input: React.FC<InputProps> = React.memo(({
     label,
     placeholder,
     value,
+    name,
     onChange,
     error,
     disabled = false,
@@ -37,6 +39,7 @@ export const Input: React.FC<InputProps> = React.memo(({
       <input
         id={id}
         type={type}
+        name={name}
         placeholder={placeholder}
         value={value}
         onChange={onChange}
