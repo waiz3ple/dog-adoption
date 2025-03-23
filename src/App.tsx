@@ -1,9 +1,14 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import { ForgotPassword } from './pages/ForgetPassword';
-import { Login } from './pages/Login';
-import { SignUp } from './pages/SignUp';
+import { useBreeds, useLogin } from './api/hooks/useDog';
+import { ForgotPassword } from './components/pages/ForgetPassword';
+import { Login } from './components/pages/Login';
+import { SignUp } from './components/pages/SignUp';
 
 function App() {
+    const { mutate } = useLogin();
+    console.log(mutate);
+    const { data, isLoading } = useBreeds();
+    console.log(data, isLoading);
   return (
     <>
         <Router>

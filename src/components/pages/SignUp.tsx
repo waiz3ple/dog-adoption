@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Button } from "../components/atoms/Button";
-import { Input } from "../components/atoms/Input";
+import { Button } from "../atoms/Button";
+import { Input } from "../atoms/Input";
 
 export const SignUp = () => {
   return (

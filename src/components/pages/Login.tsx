@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from "../components/atoms/Button";
-import { Checkbox } from '../components/atoms/CheckBox';
-import { Input } from "../components/atoms/Input";
+import { Button } from "../atoms/Button";
+import { Checkbox } from '../atoms/CheckBox';
+import { Input } from "../atoms/Input";
 
 export const Login = () => {
     const [isChecked, setIsChecked] = useState(false);
