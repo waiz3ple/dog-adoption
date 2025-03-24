@@ -13,10 +13,13 @@
     "@tailwindcss/vite": "^4.0.15",
     "@tanstack/react-query": "^5.69.0",
     "axios": "^1.8.4",
+    "framer-motion": "^12.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-masonry-css": "^1.0.16",
     "react-router-dom": "^7.4.0",
-    "tailwindcss": "^4.0.15"
+    "tailwindcss": "^4.0.15",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
