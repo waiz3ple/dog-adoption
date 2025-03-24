@@ -1,30 +1,14 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.my-masonry-grid {
+  display: flex;
+  margin-left: -24px; 
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 24px; 
+  background-clip: padding-box;
+}
+.my-masonry-grid_column > div {
+  margin-bottom: 24px; 
 }
 
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #fff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
 @import "tailwindcss";
