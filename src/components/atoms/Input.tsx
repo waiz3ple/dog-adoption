@@ -2,10 +2,10 @@ import React from 'react';
 
 interface InputProps {
     id?: string;
-    type?: 'text' | 'email' | 'password';
+    type?: 'text' | 'email' | 'password'| 'number' | 'search';
     label?: string;
     placeholder?: string;
-    value?: string;
+    value?: string | number;
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
     error?: string;
     disabled?: boolean;
