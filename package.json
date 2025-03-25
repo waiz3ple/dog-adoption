@@ -1,13 +1,11 @@
 {
     "name": "dog-adoption",
     "private": true,
-    "version": "0.0.0",
+    "version": "0.0.1",
     "type": "module",
-    "homepage": "https://waiz3ple.github.io/dog-adoption",
-    "author": "waiz3ple",
+    "author": "Wasiu Ramoni",
     "license": "MIT",
     "description": "A dog adoption app built with React, Vite, and Tailwind CSS.",
-    
     "scripts": {
         "dev": "vite",
         "build": "tsc -b && vite build",
@@ -15,7 +13,7 @@
         "preview": "vite preview",
         "test": "jest",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "@tailwindcss/vite": "^4.0.15",
