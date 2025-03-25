@@ -1,8 +1,9 @@
-import tailwindcss from '@tailwindcss/vite'
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
-// https://vite.dev/config/
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+
 export default defineConfig({
     plugins: [react(), tailwindcss()],
-     assetsInclude: ['**/*.jpeg', '**/*.jpg', '**/*.png'],
+    assetsInclude: ['**/*.jpeg', '**/*.jpg', '**/*.png'],
+    base: '/dog-adoption/',
 })

@@ -5,6 +5,7 @@
     "type": "module",
     "author": "Wasiu Ramoni",
     "license": "MIT",
+    "homepage": "https://waiz3e.github.io/dog-adoption/",
     "description": "A dog adoption app built with React, Vite, and Tailwind CSS.",
     "scripts": {
         "dev": "vite",
