@@ -7,7 +7,7 @@ import { SignUp } from './components/pages/SignUp';
 function App() {
   return (
       <>
-        <Router>
+        <Router basename="/dog-adoption">
             <Routes>
                 <Route path="/" element={<Login/>} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
