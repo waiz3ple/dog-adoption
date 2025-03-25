@@ -35,13 +35,13 @@ export const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="relative w-full max-w-md  p-6">
-        {/* Circular Dog Image with Rotating Ring */}
+        
         <div className="relative flex justify-center -mb-10">
-          {/* Circular Image Container */}
+          
           <div className="relative w-32 h-32 group">
-            {/* Rotating Ring */}
+          
             <div className="absolute inset-0 rounded-full border-4 border-blue-500 animate-spin-slow group-hover:animate-pulse group-hover:shadow-[0_0_15px_5px_rgba(59,130,246,0.7)] group-hover:border-blue-400 transition-all duration-300" />
-            {/* Dog Image */}
+          
             <img
                 src={dogIllustration}
                 role='presentation'
@@ -51,7 +51,7 @@ export const Login = () => {
           </div>
         </div>
 
-        {/* Login Form */}
+       
         <div className="bg-white p-8 rounded-lg shadow-lg mt-1">
           <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Welcome Back</h2>
           <p className="text-sm text-gray-600 mb-8 text-center">
