@@ -1,6 +1,6 @@
 # 🐶 Find Your Soulmate
 
-Hey there! This is my take on a dog adoption app for Fetch. It’s a clean, React-powered tool to help you find your dream pup. Search by breed, age, or zip code, save your favorites, and let the app pick a match just for you. It’s got a slick design, dark mode toggle, and map pop-ups—everything you need to adopt with ease.
+Hey there! This is my take on a dog adoption app for Fetch. It’s a clean, React-powered tool to help you find your dream pup. Search by breed, age, or zip code, save your favorites, and let the app pick a match just for you. It’s got a slick design, dark mode toggle, and map pop-ups everything you need to adopt with ease.
 
 Check it out live on [Live Demo](https://waiz3ple.github.io/dog-adoption)
 
@@ -8,7 +8,7 @@ Check it out live on [Live Demo](https://waiz3ple.github.io/dog-adoption)
 
 ## What’s Inside
 
-- **Search & Filters**: Find dogs by breed, age, or location—super simple.
+- **Search & Filters**: Find dogs by breed, age, or location.
 - **Favorites**: Heart the ones you love and filter them out.
 - **Matchmaking**: Hit "Find Match" for a personalized pup pick.
 - **Map Modal**: Click a dog to see where they’re at.
