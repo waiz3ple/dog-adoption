@@ -1,4 +1,3 @@
-// src/api/types/dogTypes.ts
 export interface Dog {
   id: string;
   img: string;

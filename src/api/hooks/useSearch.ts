@@ -61,7 +61,7 @@ export const useSearch = () => {
                 fetchCityByIP();
               }
             },
-            { timeout: 10000 }
+            { timeout: 1e4 }
           );
         } else {
           console.log('Geolocation not supported, using IP.');
@@ -79,7 +79,7 @@ export const useSearch = () => {
         const data = await res.json();
         setUserCity(data.city || 'Unknown');
       } catch (error) {
-        console.error('IP geolocation error:', error);
+        console.error('IP geolocation error:', error); 
         setUserCity('Unknown');
       }
     };

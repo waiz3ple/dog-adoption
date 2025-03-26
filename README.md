@@ -21,7 +21,7 @@ Check it out live on [Live Demo](https://waiz3ple.github.io/dog-adoption)
 
 - React + TypeScript
 - Tailwind CSS
-- React Query
+- TanStack Query
 - Framer Motion
 - Zustand
 
@@ -30,7 +30,7 @@ Check it out live on [Live Demo](https://waiz3ple.github.io/dog-adoption)
 ## How to Run It
 
 1. Clone it: `git clone https://github.com/waiz3ple/dog-adoption.git`
-2. navigate: cd dog-adoption
+2. navigate: `cd dog-adoption`
 3. Install stuff: `npm install`
 4. Start it up: `npm run dev`
 5. Open `http://localhost:5175/dog-adoption/`
